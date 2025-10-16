@@ -1,242 +1,238 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Instagram — Sucesso na Rede Social</title>
-  <meta name="description" content="Serviços profissionais para Instagram: seguidores, curtidas, views em lives, views em Reels, visualizações nos Stories, comentários e votos em enquetes. Solicite via WhatsApp." />
-  <meta name="author" content="Sucesso na Rede Social" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços de Instagram - Sucesso na Rede Social</title>
   <style>
-    /* Reset básico */
-    :root{
-      --bg:#0f1724;
-      --card:#0b1220;
-      --muted:#94a3b8;
-      --accent:#7c3aed;
-      --neon: #ff5ca3;
-      --glass: rgba(255,255,255,0.03);
-      --glass-2: rgba(255,255,255,0.02);
-      --glass-border: rgba(255,255,255,0.06);
-      --success: #10b981;
-      --shadow: 0 6px 24px rgba(2,6,23,0.6);
-      color-scheme: dark;
-    }
-    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
-    body{
-      background: radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.08), transparent 8%),
-                  radial-gradient(900px 400px at 90% 90%, rgba(255,92,163,0.05), transparent 12%),
-                  var(--bg);
-      color:#e6eef8;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #333;
     }
 
-    /* Header */
-    header{
-      position:sticky;top:0;z-index:80;
-      backdrop-filter: blur(6px);
-      background: linear-gradient(180deg, rgba(5,8,15,0.6), rgba(5,8,15,0.35));
-      border-bottom:1px solid rgba(255,255,255,0.03);
-      display:flex;align-items:center;gap:16px;padding:12px 20px;
-      box-shadow: var(--shadow);
+    header {
+      background: linear-gradient(90deg, #e1306c, #f56040);
+      color: #fff;
+      text-align: center;
+      padding: 25px 15px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
-    .logo{
-      display:flex;gap:12px;align-items:center;font-weight:700;
-      font-size:18px;color:linear-gradient(90deg,#fff,#ddd);
-    }
-    .logo svg{filter: drop-shadow(0 4px 12px rgba(124,58,237,0.2));}
-    nav{margin-left:auto;display:flex;gap:8px;align-items:center;}
-    nav a{
-      color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:8px;font-size:14px;
-    }
-    nav a:hover{color:#fff;background:var(--glass);}
 
-    /* Hero */
-    .hero{
-      display:grid;grid-template-columns: 1fr;gap:20px;padding:48px 20px 28px;max-width:1100px;margin:0 auto;
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
     }
-    .hero-card{
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border:1px solid var(--glass-border);
-      padding:28px;border-radius:14px;box-shadow:var(--shadow);display:flex;gap:20px;align-items:center;
-    }
-    .hero-left{flex:1}
-    .eyebrow{font-size:13px;color:var(--accent);font-weight:700;background:linear-gradient(90deg,rgba(124,58,237,0.08),transparent);display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(124,58,237,0.12);}
-    h1{margin:8px 0 4px;font-size:28px;line-height:1.05}
-    p.lead{color:var(--muted);margin:0 0 10px}
-    .hero-cta{display:flex;gap:10px;margin-top:6px;align-items:center;}
-    .btn{
-      display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); color:#fff;font-weight:600;text-decoration:none;
-      cursor:pointer;
-    }
-    .btn.secondary{background:transparent;color:var(--muted);font-weight:500}
-    .scroll-down{display:inline-flex;gap:8px;align-items:center;color:var(--muted);font-size:14px}
 
-    /* Anchors list */
-    .anchors{
-      display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+      position: sticky;
+      top: 80px;
+      z-index: 998;
     }
-    .anchor-link{
-      padding:8px 12px;border-radius:999px;background:var(--glass);border:1px solid rgba(255,255,255,0.02);color:var(--muted);
-      text-decoration:none;font-weight:600;font-size:13px;
-    }
-    .anchor-link:hover{transform:translateY(-3px);color:#fff}
 
-    /* Social content wrapper */
-    main{max-width:1100px;margin:22px auto;padding:0 20px 80px}
-    section.card{
-      background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
-      border-radius:12px;padding:18px;border:1px solid var(--glass-border);box-shadow:0 8px 30px rgba(2,6,23,0.6);
-      margin-bottom:18px;
+    nav a {
+      margin: 5px 10px;
+      color: #e1306c;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
     }
-    section.card h2{margin:0 0 8px;font-size:20px}
-    section.card p{color:var(--muted);margin:8px 0;}
 
-    /* Tabelas de preços */
-    .price-table{width:100%;border-collapse:collapse;margin-top:12px}
-    .price-table th, .price-table td{padding:12px 10px;text-align:left;border-bottom:1px dashed rgba(255,255,255,0.02)}
-    .price-table th{font-size:14px;color:var(--muted);font-weight:600}
-    .price-table td .price{font-weight:700}
-    .price-note{font-size:13px;color:var(--muted);margin-top:8px}
+    nav a:hover {
+      border-bottom: 2px solid #e1306c;
+    }
 
-    /* WhatsApp button style (neon) */
-    .whatsapp-btn{
-      display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;font-weight:700;text-decoration:none;
-      background:linear-gradient(90deg, rgba(37,211,102,0.12), rgba(37,211,102,0.06));
-      border:1px solid rgba(37,211,102,0.14);
-      color:#dcfce7;
-      box-shadow: 0 6px 18px rgba(16,185,129,0.06), 0 0 18px rgba(37,211,102,0.04) inset;
+    section {
+      padding: 30px 15px;
+      max-width: 900px;
+      margin: auto;
     }
-    .whatsapp-btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(16,185,129,0.1);}
 
-    /* Decorative social card with neon border and float */
-    .decor-card{
-      display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);
-      background: linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.01));
-      position:relative;overflow:visible;
+    section h2 {
+      color: #e1306c;
+      border-left: 5px solid #e1306c;
+      padding-left: 10px;
+      margin-top: 50px;
     }
-    .neon-outline{
-      --i: 0;
-      position:absolute;inset: -2px;
-      border-radius:14px;
-      pointer-events:none;
-      box-shadow:
-        0 0 12px rgba(255,92,163,0.06),
-        0 0 28px rgba(124,58,237,0.04);
-      mix-blend-mode:screen;opacity:0.9;
-      animation: neonPulse calc(3s + var(--i) * 0.3s) ease-in-out infinite;
-      filter: drop-shadow(0 6px 18px rgba(124,58,237,0.06));
-    }
-    @keyframes neonPulse{
-      0%{transform:translateY(0) scale(1); opacity:0.9; box-shadow:0 0 8px rgba(255,92,163,0.05)}
-      50%{transform:translateY(-6px) scale(1.006); opacity:1; box-shadow:0 0 26px rgba(255,92,163,0.12)}
-      100%{transform:translateY(0) scale(1); opacity:0.9}
-    }
-    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
 
-    /* Reviews */
-    .reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:12px}
-    .review{
-      background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
-      padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02);
-      display:flex;gap:12px;align-items:flex-start;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
-    .avatar{
-      width:44px;height:44px;border-radius:999px;flex:0 0 44px;display:flex;align-items:center;justify-content:center;font-weight:700;
-      color:#102a43;background:linear-gradient(180deg,#fff,#f3f4f6);box-shadow:0 6px 16px rgba(2,6,23,0.4);
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
     }
-    .star{color:#fbbf24;font-weight:800;margin-right:6px}
-    .review-body{font-size:14px;color:var(--muted)}
 
-    /* Floating chat bubble */
-    .chat-bubble{
-      position:fixed;right:18px;bottom:18px;z-index:120;display:flex;flex-direction:column;align-items:flex-end;gap:8px;
+    th {
+      background: #f7f7f7;
+      font-weight: bold;
     }
-    .chat-card{
-      display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:999px;background:linear-gradient(90deg,#fff,#fff);
-      color:#0b1220;font-weight:700;box-shadow:0 18px 40px rgba(2,6,23,0.6);transform-origin:bottom right;
-      animation: popIn 0.6s ease;
+
+    tr:hover {
+      background: #fff7f9;
     }
-    .chat-avatar{width:54px;height:54px;border-radius:999px;overflow:hidden;flex:0 0 54px;border:4px solid rgba(255,255,255,0.08)}
-    .chat-avatar svg{display:block;width:54px;height:54px}
-    .chat-cta{font-size:14px}
-    .chat-small{font-size:12px;color:var(--muted);font-weight:600;margin-top:2px}
 
-    @keyframes popIn{0%{transform:scale(.9);opacity:0}100%{transform:scale(1);opacity:1}}
+    .btn-whatsapp {
+      display: inline-block;
+      background: #25d366;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
 
-    /* Footer */
-    footer{max-width:1100px;margin:40px auto;padding:20px;font-size:13px;color:var(--muted);text-align:center}
+    .btn-whatsapp:hover {
+      background: #1ebd58;
+    }
 
-    /* Responsiveness */
-    @media(min-width:760px){
-      .hero{grid-template-columns: 1fr 360px;}
-      h1{font-size:34px}
+    .note {
+      font-size: 0.9em;
+      margin-top: 10px;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      background: #fff;
+      padding: 30px 15px;
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* Chat flutuante */
+    .chat-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #fff;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      z-index: 9999;
+    }
+
+    .chat-float:hover {
+      transform: scale(1.05);
+    }
+
+    .chat-float img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+    .chat-float span {
+      font-weight: 600;
+      font-size: 0.95em;
+      color: #333;
+    }
+
+    .whatsapp-icon {
+      background: #25d366;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 5px;
+    }
+
+    .whatsapp-icon::before {
+      content: '💬';
+      font-size: 12px;
+      color: #fff;
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4em;
+      }
+
+      nav a {
+        font-size: 0.9em;
+        margin: 4px;
+      }
+
+      th, td {
+        padding: 10px;
+      }
+
+      .chat-float {
+        bottom: 15px;
+        right: 15px;
+        padding: 6px 10px;
+      }
+
+      .chat-float img {
+        width: 35px;
+        height: 35px;
+      }
+
+      .chat-float span {
+        font-size: 0.85em;
+      }
     }
   </style>
 </head>
+
 <body>
-
   <header>
-    <div class="logo" aria-hidden="true">
-      <!-- small logo svg -->
-      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#ff5ca3"/></linearGradient></defs>
-        <rect x="2" y="2" width="20" height="20" rx="6" fill="url(#g)"/>
-        <path d="M7 12c1.5-2 4-2 5.5 0 1.5-2 4-2 5.5 0" stroke="rgba(255,255,255,0.9)" stroke-width="1.2" stroke-linecap="round"/>
-      </svg>
-      Sucesso na Rede Social
-    </div>
-
-    <nav aria-label="Navegação da página">
-      <a href="#seguidores" class="anchor-link">Seguidores</a>
-      <a href="#views-live" class="anchor-link">Views Live</a>
-      <a href="#curtidas" class="anchor-link">Curtidas</a>
-      <a href="#reels" class="anchor-link">Reels</a>
-      <a href="#stories" class="anchor-link">Stories</a>
-      <a href="#comentarios" class="anchor-link">Comentários</a>
-      <a href="#votos" class="anchor-link">Votos</a>
-      <a href="#reviews" class="anchor-link">Reviews (30)</a>
-    </nav>
+    <h1>Serviços para Instagram</h1>
+    <p>⭐ 30 avaliações positivas — <a href="#avaliacoes" style="color:#fff;text-decoration:underline;">ver avaliações</a></p>
   </header>
 
-  <div class="hero">
-    <div class="hero-card" role="region" aria-label="Banner principal">
-      <div class="hero-left">
-        <div class="eyebrow">Instagram • Serviços</div>
-        <h1>Encontre o serviço certo para você e comece agora.</h1>
-        <p class="lead">Soluções pensadas para quem quer crescer no Instagram com estratégia e segurança. Selecione abaixo o serviço desejado, veja preços e solicite diretamente no WhatsApp.</p>
+  <nav>
+    <a href="#seguidores">Seguidores</a>
+    <a href="#views">Views em Live</a>
+    <a href="#curtidas">Curtidas</a>
+    <a href="#reels">Visualizações Reels</a>
+    <a href="#stories">Views Stories</a>
+    <a href="#comentarios">Comentários</a>
+    <a href="#votos">Votos Enquetes</a>
+  </nav>
 
-        <div class="hero-cta">
-          <a class="btn" href="#seguidores">Ver serviços</a>
-          <a class="btn secondary" href="#reviews">Ver avaliações (30)</a>
-        </div>
-
-        <div class="anchors" style="margin-top:16px;">
-          <a class="anchor-link" href="#seguidores">Seguidores</a>
-          <a class="anchor-link" href="#views-live">Views Live</a>
-          <a class="anchor-link" href="#curtidas">Curtidas</a>
-          <a class="anchor-link" href="#reels">Reels</a>
-          <a class="anchor-link" href="#stories">Stories</a>
-          <a class="anchor-link" href="#comentarios">Comentários</a>
-          <a class="anchor-link" href="#votos">Votos</a>
-        </div>
-      </div>
-
-      <div style="width:340px;display:flex;flex-direction:column;gap:12px">
-        <div style="background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)">
-          <strong>Atendimento rápido</strong>
-          <div style="color:var(--muted);font-size:13px;margin-top:8px">Solicite via WhatsApp e confirme o prazo. Entrega com segurança e suporte dedicado.</div>
-        </div>
-
-        <div style="padding:12px;border-radius:12px;background:linear-gradient(90deg, rgba(124,58,237,0.06), rgba(255,92,163,0.03));border:1px solid rgba(124,58,237,0.08)">
-          <strong style="display:block">Garantia de Reembolso</strong>
-          <span style="color:var(--muted);font-size:13px">Se não entregarmos conforme combinado, você tem direito ao estorno total.</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <section id="seguidores">
+    <h2>Seguidores Instagram</h2>
+    <p>Ganhe credibilidade e destaque natural com seguidores reais e engajados. Ideal para quem deseja impulsionar o alcance e fortalecer a imagem do perfil.</p>
+    <table>
+      <tr><th>Pacote</th><th>Preço</th><th>Ação</th></tr>
+      <tr><td>100 seguidores</td><td>R$ 8</td><td><a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=5513997155104&text=Olá, vim do site, gostaria saber sobre o serviço de 100 seguidores por 8 reais.">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>500 seguidores</td><td>R$ 40</td><td><a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=5513997155104&text=Olá, vim do site, gostaria saber sobre o serviço de 500 seguidores por 40 reais.">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>1000 seguidores</td><td>R$ 80</td><td><a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=5513997155104&text=Olá, vim do site, gostaria saber sobre o serviço de 1000 seguidores por 80 reais.">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>3000 seguidores</td><td>R$ 240</td><td><a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=5513997155104&text=Olá, vim do site, gostaria saber sobre o serviço de 3000 seguidores por 240 reais.">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>5000 seguidores</td><td>R$ 400</td><td><a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=5513997155104&text=Olá, vim do site, gostaria saber sobre o serviço de 5000 seguidores por 400 reais.">Solicitar no WhatsApp</a></td></tr>
+    </table>
+    <p class="note">💬 Caso não seja possível concluir a entrega, você tem 100% de reembolso garantido.</p>
+  </section>
 
   <main>
 
