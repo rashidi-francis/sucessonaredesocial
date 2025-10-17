@@ -277,6 +277,57 @@
 
 
 
+
+.menu-ancoras {
+  position: fixed;           /* Fixa o menu na tela */
+  top: 0;                    /* Encosta no topo */
+  left: 0;
+  width: 100%;               /* Ocupa toda a largura */
+  background: rgba(0, 0, 0, 0.85); /* Fundo escuro translúcido */
+  backdrop-filter: blur(8px); /* Efeito de vidro */
+  padding: 10px 0;
+  text-align: center;
+  z-index: 9999;             /* Garante que fique acima de tudo */
+}
+
+.menu-ancoras a {
+  color: #00ff88; /* Verde neon */
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.menu-ancoras a:hover {
+  color: #fff;
+}
+
+/* Espaço extra no topo pra o conteúdo não ficar escondido atrás do menu fixo */
+body {
+  padding-top: 60px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu-ancoras {
+    font-size: 13px;
+    padding: 8px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .menu-ancoras a {
+    display: inline-block;
+    margin: 0 8px;
+  }
+}
+
+
+
+
+
+
+
   </style>
 </head>
 <body>
@@ -291,7 +342,7 @@
         <a href="https://sucessonaredesocial.com.br/youtube/#horas">Horas Assistidas</a>
         <a href="https://sucessonaredesocial.com.br/youtube/#comentarios">Comentários</a>
         <a href="https://sucessonaredesocial.com.br/youtube/#reviews">Avaliações</a>
-        <a href="https://sucessonaredesocial.com.br/youtube/#refund">Política de Reembolso</a>
+        <a href="https://sucessonaredesocial.com.br/youtube/#reembolso">Política de Reembolso</a>
     </nav>
 
 </header>
