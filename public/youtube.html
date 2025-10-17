@@ -71,6 +71,53 @@
     @media(max-width:768px){
         nav a {display:block; margin:8px 0;}
     }
+
+
+
+
+
+        #fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.85); /* Fundo semi-transparente pra destacar */
+    color: #fff;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(6px); /* dá um efeito moderno de vidro */
+    }
+    #fixed-menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    }
+    #fixed-menu ul li a {
+    color: #00ff99;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    }
+    #fixed-menu ul li a:hover {
+    color: #fff;
+    transform: scale(1.1);
+    }
+
+    /* Espaço extra no topo pra não esconder o conteúdo */
+    body {
+    padding-top: 70px;
+    }
+
+
+
+
+
 </style>
 </head>
 <body>
@@ -89,21 +136,6 @@
     </nav>
 
 </header>
-
-    <!-- Menu Fixo -->
-    <nav id="fixed-menu">
-        <ul>
-            <li><a href="#live">Espectadores ao vivo</a></li>
-            <li><a href="#inscritos">Inscritos Canal</a></li>
-            <li><a href="#views">Visualizações Vídeo</a></li>
-            <li><a href="#curtidas">Curtidas Vídeo</a></li>
-            <li><a href="#horas">Horas Assistidas</a></li>
-            <li><a href="#comentarios">Comentários</a></li>
-            <li><a href="#reviews">Avaliações</a></li>
-            <li><a href="#refund">Política de Reembolso</a></li>
-        </ul>
-    </nav>
-
 
 
 
