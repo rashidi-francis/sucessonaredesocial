@@ -221,6 +221,50 @@
 
 
 
+
+
+
+    /* === ESTILO DO BOTÃO WHATSAPP NAS TABELAS === */
+    .btn-whatsapp {
+    display: inline-block;
+    background: linear-gradient(135deg, #00e676, #00c853);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 200, 83, 0.4);
+    transition: all 0.3s ease;
+    font-size: 16px;
+    }
+
+    /* Efeito ao passar o mouse */
+    .btn-whatsapp:hover {
+    background: linear-gradient(135deg, #00c853, #00e676);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 255, 100, 0.5);
+    }
+
+    /* Centralizar os botões dentro da tabela */
+    td {
+    text-align: center;
+    vertical-align: middle;
+    }
+
+    /* Responsividade para celular */
+    @media (max-width: 600px) {
+    .btn-whatsapp {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+    }
+
+
+
+
+
   </style>
 </head>
 <body>
@@ -268,7 +312,12 @@
         <tr>
             <td>1.000 espectadores - 1h</td>
             <td>R$800</td>
-            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 espectadores por 800 reais">Solicitar no WhatsApp</a></td>
+            <td><a href="https://wa.me/5513997155104?text=olá, vim do site, gostaria saber sobre o serviço de 500 seguidores por 40 reais." 
+   target="_blank" 
+   class="btn-whatsapp">
+   Solicitar no WhatsApp
+</a>
+</td>
         </tr>
     </table>
     <p class="note">Caso não consigamos entregar, você recebe todo o valor de volta.</p>
