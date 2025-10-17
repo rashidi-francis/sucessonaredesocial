@@ -1,124 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Serviços YouTube - Sucesso na Rede Social</title>
-<style>
-    /* Reset básico */
-    * {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
-    body {background: #f9f9f9; color:#222;}
-    a {text-decoration: none; color: #00c853;}
-    h1, h2, h3 {margin-bottom: 10px; color: #111;}
-    p {margin-bottom: 15px; line-height: 1.6;}
-    .container {max-width: 1200px; margin: auto; padding: 20px;}
-    
-    /* Header e navegação */
-    header {background: #00c853; color:#fff; padding: 20px; border-radius: 10px; margin-bottom:20px;}
-    header h1 {text-align:center;}
-    nav {margin-top:15px; text-align:center;}
-    nav a {margin: 0 15px; font-weight:bold; transition: color 0.3s;}
-    nav a:hover {color: #aeea00;}
-
-    /* Subtópicos */
-    section {margin-bottom:40px; padding:20px; background:#fff; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
-    section h2 {color:#00c853; margin-bottom:15px;}
-    .subtitle-text {font-size:14px; color:#555; margin-bottom:15px;}
-
-    /* Tabelas de preços */
-    table {width:100%; border-collapse: collapse; margin-bottom:15px;}
-    table th, table td {padding:12px; border:1px solid #ddd; text-align:center;}
-    table th {background:#e0f2f1; color:#00695c;}
-    .price-btn {display:inline-block; margin-top:10px; padding:10px 20px; background:#00c853; color:#fff; border-radius:30px; transition: background 0.3s;}
-    .price-btn:hover {background:#009624;}
-
-    /* Notinha de garantia */
-    .note {font-size:13px; color:#777; margin-top:8px;}
-
-    /* Avaliações */
-    #reviews {margin-top:50px;}
-    .review {background:#e0f7fa; padding:15px; border-radius:10px; margin-bottom:15px; display:flex; align-items:center;}
-    .review img {width:50px; height:50px; border-radius:50%; margin-right:15px;}
-    .review-stars {color:#ffb400; margin-bottom:5px;}
-
-    /* Reembolso neon */
-    .refund {border: 2px solid #00ff9e; padding:20px; border-radius:15px; background:#000; color:#fff; margin-top:40px; animation: neon 1.5s infinite alternate;}
-    @keyframes neon {
-        0% {box-shadow: 0 0 5px #00ff9e, 0 0 10px #00ff9e, 0 0 20px #00ff9e;}
-        100% {box-shadow: 0 0 20px #00ff9e, 0 0 40px #00ff9e, 0 0 60px #00ff9e;}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços Instagram - Sucesso na Rede Social</title>
+  <style>
+    /* ====== RESET ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
     }
 
-    /* WhatsApp flutuante */
-    #whatsapp-btn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 60px;
-        height: 60px;
-        background:#00ff9e;
-        border-radius:50%;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        box-shadow:0 4px 15px rgba(0,0,0,0.3);
-        z-index:1000;
-        transition: transform 0.3s;
-    }
-    #whatsapp-btn:hover {transform: scale(1.1);}
-    #whatsapp-btn img {width:35px; height:35px;}
-
-    /* Responsivo */
-    @media(max-width:768px){
-        nav a {display:block; margin:8px 0;}
-    }
-
-
-
-
-
-        #fixed-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-    background: rgba(0, 0, 0, 0.85); /* Fundo semi-transparente pra destacar */
-    color: #fff;
-    padding: 12px 0;
-    display: flex;
-    justify-content: center;
-    backdrop-filter: blur(6px); /* dá um efeito moderno de vidro */
-    }
-    #fixed-menu ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    }
-    #fixed-menu ul li a {
-    color: #00ff99;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s, transform 0.3s;
-    }
-    #fixed-menu ul li a:hover {
-    color: #fff;
-    transform: scale(1.1);
-    }
-
-    /* Espaço extra no topo pra não esconder o conteúdo */
     body {
-    padding-top: 70px;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
     }
 
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ====== CABEÇALHO ====== */
+    header {
+      background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
+      padding: 15px 10px;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    /* ====== NAVEGAÇÃO POR ÂNCORAS ====== */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      padding: 12px 18px;
+      color: #333;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #833ab4;
+      color: white;
+      border-radius: 5px;
+    }
+
+    /* ====== SEÇÕES ====== */
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin: 20px 0;
+      text-align: center;
+      color: #fd1d1d;
+    }
+
+    section p {
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    /* ====== TABELAS DE PREÇO ====== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    table th, table td {
+      padding: 12px 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    table th {
+      background: #833ab4;
+      color: #fff;
+    }
+
+    /* ====== BOTÃO WHATSAPP ====== */
+    .whatsapp-btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebe5d;
+    }
+
+    /* ====== CHAT FLUTUANTE ====== */
+    .chat-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25D366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 10000;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .chat-float:hover {
+      transform: scale(1.1);
+    }
+
+    .chat-float img {
+      width: 30px;
+      height: 30px;
+    }
+
+    /* ====== NOTAS ====== */
+    .note {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    /* ====== AVALIAÇÕES ====== */
+    .reviews {
+      margin-top: 40px;
+    }
+
+    .reviews h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #833ab4;
+    }
+
+    .review-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .review-item img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .review-content {
+      flex: 1;
+    }
+
+    .review-content .stars {
+      color: #FFD700;
+      margin-bottom: 5px;
+    }
+
+    /* ====== RESPONSIVIDADE ====== */
 
 
 
+  /* CENTRALIZAÇÃO APENAS NO DESKTOP */
+  @media (min-width: 769px) {
+    section {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;  /* já tinha, mantém largura agradável */
+    }
 
-</style>
+    table {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .reviews {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
+
+  </style>
 </head>
 <body>
 
