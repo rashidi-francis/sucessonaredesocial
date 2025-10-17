@@ -1,205 +1,383 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Site</title>
-    <style>
-        /* ===== Reset e Estilos Básicos ===== */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background: #f4f4f4;
-            color: #333;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços Instagram - Sucesso na Rede Social</title>
+  <style>
+    /* ====== RESET ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
 
-        /* ===== Container Geral ===== */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
 
-        /* ===== Cabeçalho ===== */
-        header {
-            text-align: center;
-            padding: 20px 0;
-        }
-        header h1 {
-            font-size: 2rem;
-            color: #222;
-        }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-        /* ===== Seções ===== */
-        section {
-            margin-bottom: 40px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
+    /* ====== CABEÇALHO ====== */
+    header {
+      background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
+      padding: 25px 20px;
+      color: white;
+      text-align: center;
+    }
 
-        /* ===== Tabelas ===== */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background: #f7f7f7;
-        }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
 
-        /* ===== Botão WhatsApp (Bolha) ===== */
-        .whatsapp-chat {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #39ff14; /* verde neon */
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            transition: transform 0.3s;
-            z-index: 1000;
-        }
-        .whatsapp-chat:hover {
-            transform: scale(1.1);
-        }
-        .whatsapp-chat img {
-            width: 35px;
-            height: 35px;
-        }
-        .whatsapp-chat:focus {
-            outline: 3px solid #fff;
-        }
+    header p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
 
-        /* ===== Reviews Simuladas ===== */
-        .reviews {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .review-card {
-            background: #f9f9f9;
-            border-radius: 10px;
-            padding: 15px;
-            flex: 1 1 calc(33% - 20px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        .review-card h4 {
-            margin-bottom: 8px;
-            color: #222;
-        }
-        .review-card p {
-            font-size: 0.9rem;
-            color: #555;
-        }
+    /* ====== NAVEGAÇÃO POR ÂNCORAS ====== */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-        /* ===== Responsividade ===== */
-        @media(max-width: 1024px) {
-            .review-card {
-                flex: 1 1 calc(50% - 20px);
-            }
-        }
-        @media(max-width: 600px) {
-            header h1 {
-                font-size: 1.5rem;
-            }
-            .review-card {
-                flex: 1 1 100%;
-            }
-        }
-    </style>
+    nav a {
+      padding: 12px 18px;
+      color: #333;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #833ab4;
+      color: white;
+      border-radius: 5px;
+    }
+
+    /* ====== SEÇÕES ====== */
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin: 20px 0;
+      text-align: center;
+      color: #fd1d1d;
+    }
+
+    section p {
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    /* ====== TABELAS DE PREÇO ====== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    table th, table td {
+      padding: 12px 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    table th {
+      background: #833ab4;
+      color: #fff;
+    }
+
+    /* ====== BOTÃO WHATSAPP ====== */
+    .whatsapp-btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebe5d;
+    }
+
+    /* ====== CHAT FLUTUANTE ====== */
+    .chat-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25D366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 10000;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .chat-float:hover {
+      transform: scale(1.1);
+    }
+
+    .chat-float img {
+      width: 30px;
+      height: 30px;
+    }
+
+    /* ====== NOTAS ====== */
+    .note {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    /* ====== AVALIAÇÕES ====== */
+    .reviews {
+      margin-top: 40px;
+    }
+
+    .reviews h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #833ab4;
+    }
+
+    .review-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .review-item img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .review-content {
+      flex: 1;
+    }
+
+    .review-content .stars {
+      color: #FFD700;
+      margin-bottom: 5px;
+    }
+
+    /* ====== RESPONSIVIDADE ====== */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      section {
+        margin: 20px 10px;
+        padding: 15px;
+      }
+
+      table th, table td {
+        font-size: 0.85rem;
+        padding: 8px 5px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- ===== Cabeçalho ===== -->
-    <header>
-        <h1>Seu Site</h1>
-    </header>
 
-    <div class="container">
-        <!-- ===== Seção de Conteúdo ===== -->
-        <section>
-            <h2>Seção Principal</h2>
-            <p>Aqui vai o conteúdo principal da sua página...</p>
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>Sucesso no Instagram</h1>
+    <p>Conheça nossos serviços estratégicos para crescer sua rede social de forma natural e eficiente.</p>
+    <p><a href="#reviews" style="color:yellow;text-decoration:underline;">30 Avaliações Positivas</a></p>
+  </header>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Preço</th>
-                        <th>Disponibilidade</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Produto A</td>
-                        <td>R$100</td>
-                        <td>Em estoque</td>
-                    </tr>
-                    <tr>
-                        <td>Produto B</td>
-                        <td>R$200</td>
-                        <td>Em estoque</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+  <!-- NAVEGAÇÃO POR ÂNCORAS -->
+  <nav>
+    <a href="#seguidores">Seguidores</a>
+    <a href="#views">Views Live</a>
+    <a href="#curtidas">Curtidas</a>
+    <a href="#reels">Reels</a>
+    <a href="#stories">Stories</a>
+    <a href="#comentarios">Comentários</a>
+    <a href="#votos">Votos Enquetes</a>
+  </nav>
 
-        <!-- ===== Reviews ===== -->
-        <section>
-            <h2>Avaliações de Clientes</h2>
-            <div class="reviews">
-                <div class="review-card">
-                    <h4>João S.</h4>
-                    <p>Produto excelente, chegou rápido e qualidade ótima!</p>
-                </div>
-                <div class="review-card">
-                    <h4>Maria F.</h4>
-                    <p>Atendimento muito bom, recomendo a todos.</p>
-                </div>
-                <div class="review-card">
-                    <h4>Carlos T.</h4>
-                    <p>Superou minhas expectativas, excelente custo-benefício.</p>
-                </div>
-                <div class="review-card">
-                    <h4>Ana P.</h4>
-                    <p>Entrega rápida e produto exatamente como descrito.</p>
-                </div>
-                <div class="review-card">
-                    <h4>Lucas M.</h4>
-                    <p>Qualidade incrível, vou comprar novamente.</p>
-                </div>
-            </div>
-        </section>
+  <!-- SEÇÃO SEGUIDORES -->
+  <section id="seguidores">
+    <h2>Seguidores Instagram</h2>
+    <p>Ganhe seguidores reais e estratégicos, aumentando sua presença e engajamento de forma natural.</p>
+    <table>
+      <tr><th>Quantidade</th><th>Preço</th><th>Solicitar</th></tr>
+      <tr><td>100 seguidores</td><td>R$ 8</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 100 seguidores por 8 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>500 seguidores</td><td>R$ 40</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 500 seguidores por 40 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>1000 seguidores</td><td>R$ 80</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 seguidores por 80 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>3000 seguidores</td><td>R$ 240</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 3000 seguidores por 240 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>5000 seguidores</td><td>R$ 400</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 5000 seguidores por 400 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+    </table>
+    <p class="note">Caso não consigamos entregar, você recebe 100% do seu valor de volta.</p>
+  </section>
+
+  <!-- SEÇÃO VIEWS LIVE -->
+  <section id="views">
+    <h2>Views na Live Instagram</h2>
+    <p>Faça suas transmissões ao vivo alcançarem mais pessoas, aumentando a interação e engajamento.</p>
+    <table>
+      <tr><th>Quantidade</th><th>Preço</th><th>Solicitar</th></tr>
+      <tr><td>100 espectadores / 1h</td><td>R$ 40</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 100 espectadores por 40 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>300 espectadores / 1h</td><td>R$ 120</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 300 espectadores por 120 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>600 espectadores / 1h</td><td>R$ 240</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 600 espectadores por 240 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>1000 espectadores / 1h</td><td>R$ 400</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 espectadores por 400 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+    </table>
+    <p class="note">Garantia de reembolso caso não consigamos entregar.</p>
+  </section>
+
+  <!-- SEÇÃO CURTIDAS -->
+  <section id="curtidas">
+    <h2>Curtidas Instagram</h2>
+    <p>Impulsione suas fotos e vídeos com curtidas estratégicas, gerando mais engajamento.</p>
+    <table>
+      <tr><th>Quantidade</th><th>Preço</th><th>Solicitar</th></tr>
+      <tr><td>200 Curtidas</td><td>R$ 20</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 200 curtidas por 20 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>500 Curtidas</td><td>R$ 50</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 500 curtidas por 50 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>1000 Curtidas</td><td>R$ 100</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 curtidas por 100 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+    </table>
+    <p class="note">Reembolso total se não conseguirmos entregar.</p>
+  </section>
+
+  <!-- SEÇÃO REELS -->
+  <section id="reels">
+    <h2>Visualizações em Vídeo Reels</h2>
+    <p>Aumente as visualizações de seus Reels e seja destacado no feed do Instagram.</p>
+    <table>
+      <tr><th>Quantidade</th><th>Preço</th><th>Solicitar</th></tr>
+      <tr><td>1.000 visualizações</td><td>R$ 8</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 visualizações por 8 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>5.000 visualizações</td><td>R$ 40</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 5000 visualizações por 40 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>10.000 visualizações</td><td>R$ 80</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 10000 visualizações por 80 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>20.000 visualizações</td><td>R$ 160</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 20000 visualizações por 160 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+    </table>
+    <p class="note">Garantia de devolução total se não entregarmos.</p>
+  </section>
+
+  <!-- SEÇÃO STORIES -->
+  <section id="stories">
+    <h2>Visualizações Brasileiras no Stories</h2>
+    <p>Veja seus Stories alcançarem mais pessoas reais, aumentando engajamento e interação.</p>
+    <table>
+      <tr><th>Quantidade</th><th>Preço</th><th>Solicitar</th></tr>
+      <tr><td>250 views</td><td>R$ 30</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 250 views por 30 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>500 views</td><td>R$ 60</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 500 views por 60 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>1.000 views</td><td>R$ 130</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 views por 130 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>2.000 views</td><td>R$ 260</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 2000 views por 260 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+    </table>
+    <p class="note">Reembolso total garantido se não entregarmos.</p>
+  </section>
+
+  <!-- SEÇÃO COMENTÁRIOS PERSONALIZADOS -->
+  <section id="comentarios">
+    <h2>Comentários Personalizados</h2>
+    <p>Escolha comentários estratégicos, unissex, apenas de mulheres ou apenas de homens.</p>
+    <table>
+      <tr><th>Quantidade</th><th>Preço</th><th>Solicitar</th></tr>
+      <tr><td>10 comentários</td><td>R$ 25</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 10 comentários por 25 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>20 comentários</td><td>R$ 50</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 20 comentários por 50 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>30 comentários</td><td>R$ 75</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 30 comentários por 75 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>40 comentários</td><td>R$ 100</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 40 comentários por 100 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+    </table>
+    <p class="note">Garantia de reembolso caso não consigamos entregar.</p>
+  </section>
+
+  <!-- SEÇÃO VOTOS ENQUETES -->
+  <section id="votos">
+    <h2>Votos em Enquetes Instagram</h2>
+    <p>Aumente a interação em suas enquetes, no feed ou nos stories, de forma natural e estratégica.</p>
+    <table>
+      <tr><th>Quantidade</th><th>Preço</th><th>Solicitar</th></tr>
+      <tr><td>20 votos</td><td>R$ 49</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 20 votos por 49 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>50 votos</td><td>R$ 115</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 50 votos por 115 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>100 votos</td><td>R$ 215</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 100 votos por 215 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>200 votos</td><td>R$ 385</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 200 votos por 385 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>500 votos</td><td>R$ 665</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 500 votos por 665 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+      <tr><td>1000 votos</td><td>R$ 990</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 votos por 990 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+    </table>
+    <p class="note">Total reembolso caso não seja entregue.</p>
+  </section>
+
+  <!-- AVALIAÇÕES -->
+  <section id="reviews" class="reviews">
+    <h3>Avaliações dos Clientes</h3>
+
+    <!-- Exemplo de 15 avaliações -->
+    <div class="review-item">
+      <img src="https://i.pravatar.cc/50?img=1" alt="Avatar">
+      <div class="review-content">
+        <div class="stars">★★★★★</div>
+        <p>Serviço excelente, entrega rápida e resultados reais. Recomendo!</p>
+      </div>
     </div>
+    <div class="review-item">
+      <img src="https://i.pravatar.cc/50?img=2" alt="Avatar">
+      <div class="review-content">
+        <div class="stars">★★★★★</div>
+        <p>Muito satisfeito com o serviço, aumentou bastante meu engajamento.</p>
+      </div>
+    </div>
+    <div class="review-item">
+      <img src="https://i.pravatar.cc/50?img=3" alt="Avatar">
+      <div class="review-content">
+        <div class="stars">★★★★★</div>
+        <p>Ótima experiência, atendimento ágil e entrega garantida.</p>
+      </div>
+    </div>
+    <div class="review-item">
+      <img src="https://i.pravatar.cc/50?img=4" alt="Avatar">
+      <div class="review-content">
+        <div class="stars">★★★★★</div>
+        <p>Simplesmente perfeito! Recomendo para qualquer influencer.</p>
+      </div>
+    </div>
+    <div class="review-item">
+      <img src="https://i.pravatar.cc/50?img=5" alt="Avatar">
+      <div class="review-content">
+        <div class="stars">★★★★★</div>
+        <p>Entrega dentro do prazo, resultados visíveis rapidamente.</p>
+      </div>
+    </div>
+    <!-- você pode duplicar até 15 -->
+  </section>
 
-    <!-- ===== Bolha de Chat WhatsApp ===== -->
-    <a href="https://wa.me/5511930500397" target="_blank" class="whatsapp-chat" aria-label="Chat no WhatsApp">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
+  <!-- CHAT WHATSAPP -->
+  <a href="https://wa.me/5513997155104?text=Olá, vim do chat lá no site, gostaria mais informações..." target="_blank" class="chat-float">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Chat">
+  </a>
 
 </body>
 </html>
