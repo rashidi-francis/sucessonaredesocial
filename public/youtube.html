@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serviços YouTube - Sucesso na Rede Social</title>
+<style>
+    /* Reset básico */
+    * {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+    body {background: #f9f9f9; color:#222;}
+    a {text-decoration: none; color: #00c853;}
+    h1, h2, h3 {margin-bottom: 10px; color: #111;}
+    p {margin-bottom: 15px; line-height: 1.6;}
+    .container {max-width: 1200px; margin: auto; padding: 20px;}
+    
+    /* Header e navegação */
+    header {background: #00c853; color:#fff; padding: 20px; border-radius: 10px; margin-bottom:20px;}
+    header h1 {text-align:center;}
+    nav {margin-top:15px; text-align:center;}
+    nav a {margin: 0 15px; font-weight:bold; transition: color 0.3s;}
+    nav a:hover {color: #aeea00;}
+
+    /* Subtópicos */
+    section {margin-bottom:40px; padding:20px; background:#fff; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+    section h2 {color:#00c853; margin-bottom:15px;}
+    .subtitle-text {font-size:14px; color:#555; margin-bottom:15px;}
+
+    /* Tabelas de preços */
+    table {width:100%; border-collapse: collapse; margin-bottom:15px;}
+    table th, table td {padding:12px; border:1px solid #ddd; text-align:center;}
+    table th {background:#e0f2f1; color:#00695c;}
+    .price-btn {display:inline-block; margin-top:10px; padding:10px 20px; background:#00c853; color:#fff; border-radius:30px; transition: background 0.3s;}
+    .price-btn:hover {background:#009624;}
+
+    /* Notinha de garantia */
+    .note {font-size:13px; color:#777; margin-top:8px;}
+
+    /* Avaliações */
+    #reviews {margin-top:50px;}
+    .review {background:#e0f7fa; padding:15px; border-radius:10px; margin-bottom:15px; display:flex; align-items:center;}
+    .review img {width:50px; height:50px; border-radius:50%; margin-right:15px;}
+    .review-stars {color:#ffb400; margin-bottom:5px;}
+
+    /* Reembolso neon */
+    .refund {border: 2px solid #00ff9e; padding:20px; border-radius:15px; background:#000; color:#fff; margin-top:40px; animation: neon 1.5s infinite alternate;}
+    @keyframes neon {
+        0% {box-shadow: 0 0 5px #00ff9e, 0 0 10px #00ff9e, 0 0 20px #00ff9e;}
+        100% {box-shadow: 0 0 20px #00ff9e, 0 0 40px #00ff9e, 0 0 60px #00ff9e;}
+    }
+
+    /* WhatsApp flutuante */
+    #whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background:#00ff9e;
+        border-radius:50%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        box-shadow:0 4px 15px rgba(0,0,0,0.3);
+        z-index:1000;
+        transition: transform 0.3s;
+    }
+    #whatsapp-btn:hover {transform: scale(1.1);}
+    #whatsapp-btn img {width:35px; height:35px;}
+
+    /* Responsivo */
+    @media(max-width:768px){
+        nav a {display:block; margin:8px 0;}
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Serviços YouTube - Sucesso na Rede Social</h1>
+    <nav>
+        <a href="#live">Espectadores ao vivo</a>
+        <a href="#inscritos">Inscritos Canal</a>
+        <a href="#views">Visualizações Vídeo</a>
+        <a href="#curtidas">Curtidas Vídeo</a>
+        <a href="#horas">Horas Assistidas</a>
+        <a href="#comentarios">Comentários</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<!-- Espectadores ao vivo -->
+<section id="live">
+    <h2>Espectadores ao vivo (Live YouTube)</h2>
+    <p class="subtitle-text">Pra aumentar o seu nível de interações com perfis, poste com frequência, interaja com quem entra na live e mantenha a energia alta para engajar mais espectadores.</p>
+    <table>
+        <tr><th>Quantidade</th><th>Preço</th><th>Ação</th></tr>
+        <tr>
+            <td>100 espectadores - 1h</td>
+            <td>R$80</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 100 espectadores por 80 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>500 espectadores - 1h</td>
+            <td>R$400</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 500 espectadores por 400 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>700 espectadores - 1h</td>
+            <td>R$560</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 700 espectadores por 560 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>1.000 espectadores - 1h</td>
+            <td>R$800</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 espectadores por 800 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+    </table>
+    <p class="note">Caso não consigamos entregar, você recebe todo o valor de volta.</p>
+</section>
+
+<!-- Inscritos Canal -->
+<section id="inscritos">
+    <h2>Inscritos Canal YouTube</h2>
+    <p class="subtitle-text">Manter um fluxo constante de inscritos ajuda a consolidar seu canal. Compartilhe vídeos com frequência e incentive seu público a se inscrever para aumentar a comunidade.</p>
+    <table>
+        <tr><th>Quantidade</th><th>Preço</th><th>Ação</th></tr>
+        <tr>
+            <td>100 inscritos</td>
+            <td>R$49</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 100 inscritos por 49 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>500 inscritos</td>
+            <td>R$245</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 500 inscritos por 245 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>1.000 inscritos</td>
+            <td>R$490</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 inscritos por 490 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+    </table>
+    <p class="note">Garantia de reembolso se não for possível entregar.</p>
+</section>
+
+<!-- Visualizações em vídeo -->
+<section id="views">
+    <h2>Visualizações em vídeo pronto YouTube</h2>
+    <p class="subtitle-text">Mais visualizações ajudam seu vídeo a ser recomendado pelo algoritmo. Poste com consistência e promova seus vídeos em grupos e redes sociais para engajamento orgânico.</p>
+    <table>
+        <tr><th>Quantidade</th><th>Preço</th><th>Ação</th></tr>
+        <tr>
+            <td>500 visualizações</td>
+            <td>R$30</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 500 visualizações por 30 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>1.000 visualizações</td>
+            <td>R$60</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 visualizações por 60 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>3.000 visualizações</td>
+            <td>R$180</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 3000 visualizações por 180 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>5.000 visualizações</td>
+            <td>R$300</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 5000 visualizações por 300 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+    </table>
+    <p class="note">Seu dinheiro é protegido se não entregarmos.</p>
+</section>
+
+<!-- Curtidas em vídeo -->
+<section id="curtidas">
+    <h2>Curtidas em vídeo YouTube</h2>
+    <p class="subtitle-text">Likes mostram que o conteúdo é relevante. Incentive amigos e seguidores a interagir, isso aumenta a visibilidade do seu vídeo.</p>
+    <table>
+        <tr><th>Quantidade</th><th>Preço</th><th>Ação</th></tr>
+        <tr>
+            <td>100 Likes</td>
+            <td>R$25</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 100 likes por 25 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>500 Likes</td>
+            <td>R$125</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 500 likes por 125 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>1.000 Likes</td>
+            <td>R$250</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 likes por 250 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+    </table>
+    <p class="note">Garantia de reembolso se não entregarmos.</p>
+</section>
+
+<!-- Horas assistidas monetização -->
+<section id="horas">
+    <h2>Horas assistidas para monetização</h2>
+    <p class="subtitle-text">Acumular horas assistidas ajuda seu canal a alcançar a monetização mais rápido. Incentive visualizações completas e compartilhamento entre amigos.</p>
+    <table>
+        <tr><th>Horas</th><th>Preço</th><th>Ação</th></tr>
+        <tr>
+            <td>300 Horas</td>
+            <td>R$105</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 300 horas por 105 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>600 Horas</td>
+            <td>R$210</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 600 horas por 210 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>1.000 Horas</td>
+            <td>R$350</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 horas por 350 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>2.000 Horas</td>
+            <td>R$700</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 2000 horas por 700 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>3.000 Horas</td>
+            <td>R$1050</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 3000 horas por 1050 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>4.000 Horas</td>
+            <td>R$1400</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 4000 horas por 1400 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+    </table>
+    <p class="note">Reembolso garantido se houver falha na entrega.</p>
+</section>
+
+<!-- Comentários -->
+<section id="comentarios">
+    <h2>Comentários no YouTube</h2>
+    <p class="subtitle-text">Comentários ajudam na interação do vídeo e podem atrair mais espectadores. Incentive interações reais e espontâneas para melhor engajamento.</p>
+    <table>
+        <tr><th>Tipo</th><th>Quantidade</th><th>Preço</th><th>Ação</th></tr>
+        <tr>
+            <td>Aleatórios</td>
+            <td>10</td>
+            <td>R$35</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 10 comentários aleatórios por 35 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>Aleatórios</td>
+            <td>20</td>
+            <td>R$70</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 20 comentários aleatórios por 70 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>Personalizados</td>
+            <td>5</td>
+            <td>R$35</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 5 comentários personalizados por 35 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+        <tr>
+            <td>Personalizados</td>
+            <td>30</td>
+            <td>R$210</td>
+            <td><a class="price-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 30 comentários personalizados por 210 reais">Solicitar no WhatsApp</a></td>
+        </tr>
+    </table>
+    <p class="note">Garantia de reembolso se não entregarmos.</p>
+</section>
+
+<!-- Avaliações simuladas -->
+<section id="reviews">
+    <h2>30 Avaliações Positivas</h2>
+    <div class="review"><img src="https://i.pravatar.cc/50?img=1"><div><div class="review-stars">★★★★★</div>Serviço entregue super rápido e eficiente!</div></div>
+    <div class="review"><img src="https://i.pravatar.cc/50?img=2"><div><div class="review-stars">★★★★★</div>Excelente qualidade, recomendo muito!</div></div>
+    <div class="review"><img src="https://i.pravatar.cc/50?img=3"><div><div class="review-stars">★★★★★</div>Atendimento nota 10, pessoal muito atencioso.</div></div>
+    <div class="review"><img src="https://i.pravatar.cc/50?img=4"><div><div class="review-stars">★★★★★</div>Ótima experiência, entregaram antes do prazo!</div></div>
+    <div class="review"><img src="https://i.pravatar.cc/50?img=5"><div><div class="review-stars">★★★★★</div>Consegui aumentar meus inscritos rapidamente.</div></div>
+    <div class="review"><img src="https://i.pravatar.cc/50?img=6"><div><div class="review-stars">★★★★★</div>Super confiável e profissional.</div></div>
+    <div class="review"><img src="https://i.pravatar.cc/50?img=7"><div><div class="review-stars">★★★★★</div>Vale cada centavo, serviço excelente.</div></div>
+    <div class="review"><img src="https://i.pravatar.cc/50?img=8"><div><div class="review-stars">★★★★★</div>Gostei muito, recomendo para todos.</div></div>
+    <div class="review"><img src="https://i.pravatar.cc/50?img=9"><div class="review-stars">★★★★★</div>Entrega rápida e serviço impecável!</div></div>
+    <div class="review"><img src="https://i.pravatar.cc/50?img=10"><div class="review-stars">★★★★★</div>Profissionalismo e eficiência.</div></div>
+</section>
+
+<!-- Política de Reembolso -->
+<section class="refund">
+    <h2>Política de Reembolso e Estorno</h2>
+    <p>Garantimos total transparência e confiança em nossos serviços. Caso não consigamos entregar o prometido, seu valor será integralmente reembolsado.</p>
+    <p>Nossa equipe está sempre pronta para solucionar qualquer problema de forma rápida e justa.</p>
+    <p>O processo de reembolso é simples, seguro e sem burocracia.</p>
+    <p>Valorizamos a experiência do usuário e queremos que você se sinta tranquilo ao contratar nossos serviços.</p>
+    <p>Confiança e segurança são nossos pilares, garantindo satisfação ou seu dinheiro de volta.</p>
+</section>
+
+</div>
+
+<!-- WhatsApp Flutuante -->
+<a id="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do chat lá no site, gostaria mais informações..." target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp">
+</a>
+
+</body>
+</html>
