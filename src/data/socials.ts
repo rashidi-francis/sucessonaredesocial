@@ -1,6 +1,6 @@
 // data/socials.ts
 export const socials = [
-  { id: 'instagram', name: 'Instagram', href: '__REPLACE_INSTAGRAM_URL__', icon: 'Instagram' },
+  { id: 'instagram', name: 'Instagram', href: 'instagram', icon: 'Instagram' },
   { id: 'youtube', name: 'YouTube', href: '__REPLACE_YOUTUBE_URL__', icon: 'Youtube' },
   { id: 'tiktok', name: 'TikTok', href: '__REPLACE_TIKTOK_URL__', icon: 'Music' },
   { id: 'facebook', name: 'Facebook', href: '__REPLACE_FACEBOOK_URL__', icon: 'Facebook' },
