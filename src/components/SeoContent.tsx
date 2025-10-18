@@ -28,7 +28,7 @@ export const SeoContent = () => {
           </p>
 
           <p className="text-muted-foreground mb-6 leading-relaxed">
-            Facebook Stories e Facebook Ads representam ferramentas poderosas para negócios locais e e-commerce. Embora muitos digam que o Facebook está "ultrapassado", a plataforma ainda concentra bilhões de usuários ativos diariamente, especialmente em faixas etárias acima de 30 anos. Para marcas B2C e B2B, ignorar o Facebook é deixar dinheiro na mesa.
+            Facebook Stories e Facebook Reels representam ferramentas poderosas para negócios locais e e-commerce. Embora muitos digam que o Facebook está "ultrapassado", a plataforma ainda concentra bilhões de usuários ativos diariamente, especialmente em faixas etárias acima de 30 anos. Para marcas B2C e B2B, ignorar o Facebook é deixar dinheiro na mesa.
           </p>
 
           <p className="text-muted-foreground mb-6 leading-relaxed">
