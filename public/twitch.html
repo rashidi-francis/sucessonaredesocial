@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços Twitch - Sucesso na Rede Social</title>
+  <style>
+    /* ====== RESET ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ====== CABEÇALHO ====== */
+    header {
+      background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
+      padding: 15px 10px;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    /* ====== NAVEGAÇÃO POR ÂNCORAS ====== */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      padding: 12px 18px;
+      color: #333;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #833ab4;
+      color: white;
+      border-radius: 5px;
+    }
+
+    /* ====== SEÇÕES ====== */
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin: 20px 0;
+      text-align: center;
+      color: #fd1d1d;
+    }
+
+    section p {
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    /* ====== TABELAS DE VALOR ====== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    table th, table td {
+      padding: 12px 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    table th {
+      background: #833ab4;
+      color: #fff;
+    }
+
+    /* ====== BOTÃO WHATSAPP ====== */
+    .whatsapp-btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebe5d;
+    }
+
+    /* ====== CHAT FLUTUANTE ====== */
+    .chat-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25D366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 10000;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .chat-float:hover {
+      transform: scale(1.1);
+    }
+
+    .chat-float img {
+      width: 30px;
+      height: 30px;
+    }
+
+    /* ====== NOTAS ====== */
+    .note {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    /* ====== AVALIAÇÕES ====== */
+    .reviews {
+      margin-top: 40px;
+    }
+
+    .reviews h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #833ab4;
+    }
+
+    .review-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .review-item img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .review-content {
+      flex: 1;
+    }
+
+    .review-content .stars {
+      color: #FFD700;
+      margin-bottom: 5px;
+    }
+
+    /* ====== RESPONSIVIDADE ====== */
+
+
+
+  /* CENTRALIZAÇÃO APENAS NO DESKTOP */
+  @media (min-width: 769px) {
+    section {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;  /* já tinha, mantém largura agradável */
+    }
+
+    table {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .reviews {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
+
+  </style>
+
+
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K2SL725Q');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17608581986"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17608581986');
+</script>
+
+
+
+<!-- Favicon -->
+    <link rel="shortcut icon" href="/logo sucesso na rede social.png" type="image/x-icon">
+
+    
+
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>Como ter Sucesso na Twitch</h1>
+    <p>Conheça nossos serviços estratégicos para crescer seu canal da Twitch de forma natural e eficiente.</p>
+    <p><a href="#reviews" style="color:yellow;text-decoration:underline;">42 Avaliações Positivas</a></p>
+  </header>
+
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2SL725Q"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+  <!-- NAVEGAÇÃO POR ÂNCORAS -->
+  <nav>
+    <a href="#views-live">Views Live</a>
+    <a href="#seguidores">Seguidores</a>
+    <a href="#views-video">Clip Views Video</a>    
+  </nav>
+
+  <!-- SEÇÃO VIEWS LIVE -->
+  <section id="views-live">
+    <h2>Espectadores na Live Twitch Views ao Vivo</h2>
+    <p>Tenha espectadores reais assistindo sua live na Twitch e aumente a força da sua presença ao vivo de forma natural e estratégica.</p>
+<p>Se o seu objetivo é ver o chat mais ativo e as transmissões com mais movimento, consistência é o segredo. Transmita com frequência, escolha horários fixos e mantenha um padrão visual que ajude o público a lembrar do seu canal. Pequenas melhorias de som, luz e interação já fazem diferença enorme na retenção.</p>
+<p>Outra dica que poucos aplicam: interaja com outros streamers que falam com o mesmo público que você quer atrair. Comente, participe de raids e colaborações. Essa troca faz seu canal aparecer mais e atrai espectadores verdadeiros de forma contínua.</p>
+<p>Pra aumentar o seu público ao vivo e turbinar a presença da sua live, confira os pacotes disponíveis abaixo:</p>
+
+<table>
+  <tr><th>Quantidade</th><th>Valor</th><th>Consultar</th></tr>
+  <tr><td>25 Espectadores (24h) + Comentários de Brinde</td><td>R$ 45</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 25 espectadores por 45 reais na Live Twitch" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>50 Espectadores (24h) + Comentários de Brinde</td><td>R$ 90</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 50 espectadores por 90 reais na Live Twitch" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>100 Espectadores (24h) + Comentários de Brinde</td><td>R$ 130</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 100 espectadores por 130 reais na Live Twitch" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>300 Espectadores (24h) + Comentários de Brinde</td><td>R$ 290</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 300 espectadores por 290 reais na Live Twitch" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>600 Espectadores (24h) + Comentários de Brinde</td><td>R$ 590</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 600 espectadores por 590 reais na Live Twitch" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>1.000 Espectadores (24h) + Comentários de Brinde</td><td>R$ 990</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 espectadores por 990 reais na Live Twitch" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>2.000 Espectadores (24h) + Comentários de Brinde</td><td>R$ 2.500</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 2000 espectadores por 2500 reais na Live Twitch" target="_blank">Solicitar no WhatsApp</a></td></tr>
+</table>
+
+<h3>Pacotes Mensais e Semanais Live Twitch:</h3>
+<table>
+  <tr><th>Quantidade</th><th>Valor</th><th>Consultar</th></tr>
+  <tr><td>25 Espectadores (1 Mês)</td><td>R$ 420</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o pacote mensal de 25 espectadores na Live Twitch por 420 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>25 Espectadores (1 Semana)</td><td>R$ 190</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o pacote semanal de 25 espectadores na Live Twitch por 190 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>50 Espectadores (1 Semana)</td><td>R$ 360</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o pacote semanal de 50 espectadores na Live Twitch por 360 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>50 Espectadores (1 Mês)</td><td>R$ 850</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o pacote mensal de 50 espectadores na Live Twitch por 850 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>100 Espectadores (1 Semana)</td><td>R$ 700</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o pacote semanal de 100 espectadores na Live Twitch por 700 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>100 Espectadores (1 Mês)</td><td>R$ 1.900</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o pacote mensal de 100 espectadores na Live Twitch por 1900 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>300 Espectadores (1 Semana)</td><td>R$ 2.100</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o pacote semanal de 300 espectadores na Live Twitch por 2100 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>500 Espectadores (1 Semana)</td><td>R$ 3.500</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o pacote semanal de 500 espectadores na Live Twitch por 3500 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>500 Espectadores (1 Mês)</td><td>R$ 10.000</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o pacote mensal de 500 espectadores na Live Twitch por 10000 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>1.000 Espectadores (1 Semana)</td><td>R$ 7.000</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o pacote semanal de 1000 espectadores na Live Twitch por 7000 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+</table>
+
+    <p class="note">Garantia de reembolso caso não consigamos entregar, você recebe 100% do seu valor de volta caso não consigamos entregar os resultados, você recebe 100% do seu valor de volta.</p>
+  </section>
+
+  <!-- SEÇÃO SEGUIDORES -->
+  <section id="views">
+    <h2>Seguidores para Canal Twitch</h2>
+    <p>Ganhar seguidores no canal da Twitch é essencial pra construir autoridade e atrair mais gente nas suas transmissões. Quanto mais seguidores você tem, maior é a chance de novos visitantes permanecerem e acompanharem suas lives.</p>
+<p>Mas seguidores de verdade não vêm do nada. É importante ter uma rotina de lives, manter consistência nos dias e horários, além de oferecer um conteúdo que combine com o público que você quer alcançar. A credibilidade vem com o tempo e com a constância.</p>
+<p>Outro ponto poderoso é interagir com quem já te acompanha. Responder mensagens, agradecer os novos seguidores e fazer o público se sentir parte da sua comunidade cria laços que fortalecem o canal e atraem ainda mais engajamento.</p>
+<p>Além disso, personalizar seu canal com boas imagens, banners e descrições ajuda a causar uma ótima primeira impressão. Pequenos detalhes visuais mostram que você leva a sério o conteúdo que produz e inspira confiança em quem chega pela primeira vez.</p>
+<p>Pra acelerar seu crescimento e fortalecer sua base de seguidores, confira abaixo os pacotes disponíveis para o seu canal da Twitch:</p>
+
+<table>
+  <tr><th>Quantidade</th><th>Valor</th><th>Consultar</th></tr>
+  <tr><td>100 Seguidores Canal Twitch</td><td>R$ 20</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 100 seguidores no canal Twitch por 20 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>300 Seguidores Canal Twitch</td><td>R$ 60</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 300 seguidores no canal Twitch por 60 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>600 Seguidores Canal Twitch</td><td>R$ 120</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 600 seguidores no canal Twitch por 120 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>1.000 Seguidores Canal Twitch</td><td>R$ 200</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 seguidores no canal Twitch por 200 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+</table>
+
+    <p class="note">Garantia de reembolso caso não consigamos entregar, você recebe 100% do seu valor de volta caso não consigamos entregar os resultados, você recebe 100% do seu valor de volta.</p>
+  </section>
+
+  <!-- SEÇÃO VIEWS EM CLIPE VIDEO -->
+  <section id="curtidas">
+    <h2>Views em Clipe Video</h2>
+    <p>Ter visualizações nos clipes do seu canal Twitch é uma das formas mais eficazes de gerar alcance e manter seu conteúdo vivo, mesmo quando você não está transmitindo ao vivo.</p>
+<p>Os clipes são como cartões de visita do seu canal — eles mostram seus melhores momentos, reações e highlights. Quanto mais visualizações seus vídeos acumulam, mais chances têm de aparecer para novos espectadores e fortalecer sua imagem como streamer ativo.</p>
+<p>Um clipe bem feito pode atrair seguidores, gerar engajamento e até despertar o interesse de marcas e parcerias. Por isso, manter um fluxo constante de views ajuda a consolidar sua presença e credibilidade dentro da plataforma.</p>
+<p>Vale também promover seus clipes nas redes sociais, como Instagram, TikTok e X (Twitter). Isso amplia o alcance e faz com que o público de fora da Twitch descubra seu conteúdo e comece a seguir você por lá.</p>
+<p>Se quiser dar um impulso nos seus vídeos e fortalecer o engajamento do canal, veja os pacotes de visualizações disponíveis abaixo:</p>
+
+<table>
+  <tr><th>Quantidade</th><th>Valor</th><th>Consultar</th></tr>
+  <tr><td>1.000 Visualizações em Clipe (vídeo Twitch)</td><td>R$ 100</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 1000 visualizações em clipe de vídeo Twitch por 100 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>2.000 Visualizações em Clipe (vídeo Twitch)</td><td>R$ 200</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 2000 visualizações em clipe de vídeo Twitch por 200 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>3.000 Visualizações em Clipe (vídeo Twitch)</td><td>R$ 300</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 3000 visualizações em clipe de vídeo Twitch por 300 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+  <tr><td>4.000 Visualizações em Clipe (vídeo Twitch)</td><td>R$ 400</td><td><a class="whatsapp-btn" href="https://wa.me/5513997155104?text=Olá, vim do site, gostaria saber sobre o serviço de 4000 visualizações em clipe de vídeo Twitch por 400 reais" target="_blank">Solicitar no WhatsApp</a></td></tr>
+</table>
+
+    <p class="note">Garantia de reembolso caso não consigamos entregar, você recebe 100% do seu valor de volta caso não consigamos entregar os resultados, você recebe 100% do seu valor de volta.</p>
+  </section>
+
+
+
+  <!-- AVALIAÇÕES -->
+  <section id="reviews" class="reviews">
+    <h3>Avaliações dos Clientes</h3>
+
+    <!-- Exemplo de 15 avaliações -->
+    <div class="review-item">
+      <img src="https://i.pravatar.cc/50?img=1" alt="Avatar">
+      <div class="review-content">
+        <div class="stars">★★★★★</div>
+        <p>Adquiri o pacote de 100 espectadores pra 24h e foi sensacional! A live ficou cheia do início ao fim, e o chat bem mais ativo. Ajudou muito a atrair novos seguidores reais que entraram por curiosidade. Entrega rápida e sem falhas.</p>
+      </div>
+    </div>
+    <div class="review-item">
+      <img src="https://i.pravatar.cc/50?img=2" alt="Avatar">
+      <div class="review-content">
+        <div class="stars">★★★★★</div>
+        <p>Usei o pacote de 600 seguidores e o resultado veio em poucas horas. Os números subiram de forma natural e meu canal começou a ganhar mais credibilidade. Valeu demais, o suporte pelo WhatsApp também foi super atencioso.</p>
+      </div>
+    </div>
+    <div class="review-item">
+      <img src="https://i.pravatar.cc/50?img=3" alt="Avatar">
+      <div class="review-content">
+        <div class="stars">★★★★★</div>
+        <p>Eu tinha uns vídeos bons, mas ninguém assistia. Depois que comprei o pacote de 3.000 visualizações em clipe, o alcance explodiu. Agora meus clipes aparecem muito mais e até recebi convite pra collab com outro streamer.</p>
+      </div>
+    </div>
+    <div class="review-item">
+      <img src="https://i.pravatar.cc/50?img=4" alt="Avatar">
+      <div class="review-content">
+        <div class="stars">★★★★★</div>
+        <p>Peguei o plano de 50 espectadores por 1 semana e já no segundo dia a diferença era nítida. Minhas lives pareciam bem mais ativas e isso atraiu mais público orgânico. Vou fechar o mensal agora.</p>
+      </div>
+    </div>
+    <div class="review-item">
+      <img src="https://i.pravatar.cc/50?img=5" alt="Avatar">
+      <div class="review-content">
+        <div class="stars">★★★★★</div>
+        <p>Comecei com 100 seguidores por mês pra manter o crescimento constante do canal. Gostei demais! É prático, confiável e ajuda a manter o perfil sempre em alta. Já tô no meu terceiro mês seguido.</p>
+      </div>
+    </div>
+    <!-- você pode duplicar até 15 -->
+  </section>
+
+
+  <!-- SEÇÃO REEMBOLSO E ESTORNO -->
+<section id="reembolso" class="reembolso-section">
+  <h2>Política de Reembolso e Estorno</h2>
+  <p>Sabemos que imprevistos acontecem e que às vezes algo pode não sair exatamente como planejado. Por isso, garantimos que você tem total segurança ao contratar qualquer serviço aqui.</p>
+  <p>Caso não consigamos entregar o que foi contratado na consultoria, você receberá **100% do valor pago** de volta, sem burocracia. Queremos que você se sinta tranquilo e confiante ao investir nos nossos serviços.</p>
+  <p>O processo é simples: entre em contato pelo WhatsApp, informe o serviço que não foi entregue e nossa equipe resolverá o seu caso de forma rápida e transparente.</p>
+  <p>Além disso, sempre buscamos soluções alternativas antes de realizar qualquer estorno, tentando entregar o serviço de forma satisfatória para você. Mas se mesmo assim não for possível, o valor será reembolsado integralmente.</p>
+  <p>Nosso compromisso é com a sua satisfação. Transparência, agilidade e confiança são a base do nosso atendimento. Pode ficar tranquilo(a): seu investimento está protegido!</p>
+</section>
+
+<style>
+/* SEÇÃO REEMBOLSO NEON */
+.reembolso-section {
+  border: 3px solid #00ff99; /* neon verde */
+  border-radius: 15px;
+  padding: 25px;
+  margin: 40px auto;
+  max-width: 900px;
+  background-color: #0a0a0a; /* fundo escuro para destacar o neon */
+  color: #ffffff;
+  box-shadow: 0 0 15px #00ff99, 0 0 30px #00ff99;
+  animation: neonPulse 2s infinite alternate;
+}
+
+.reembolso-section h2 {
+  color: #00ff99;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reembolso-section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* EFEITO PULSANTE NEON */
+@keyframes neonPulse {
+  from {
+    box-shadow: 0 0 15px #00ff99, 0 0 30px #00ff99;
+  }
+  to {
+    box-shadow: 0 0 25px #00ff99, 0 0 50px #00ff99;
+  }
+}
+
+@media (max-width: 768px) {
+  .reembolso-section {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+}
+</style>
+
+
+  <!-- CHAT WHATSAPP -->
+  <a href="https://wa.me/5513997155104?text=Olá, vim do chat lá no site, gostaria mais informações..." target="_blank" class="chat-float">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Chat">
+  </a>
+
+</body>
+</html>
